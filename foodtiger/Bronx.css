@@ -1,0 +1,243 @@
+.navbar{
+	display: flex;
+	justify-content: space-between;
+  position: sticky;
+  top: 500;
+  background: transparent;
+  width: 1460px;
+}
+.logo img{
+	width: 150px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Button */
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 10px 20px;
+  background: #ffffff;
+  color: #4f46e5;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  border-radius: 10px;
+  cursor: pointer;
+
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* Arrow */
+.arrow {
+  font-size: 11px;
+  transition: transform 0.2s ease;
+}
+
+/* Dropdown */
+.menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+
+  min-width: 150px;
+  background: #ffffff;
+  border-radius: 10px;
+
+  padding: 6px 0;
+  list-style: none;
+
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.10);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.95) translateY(-6px);
+  transform-origin: top;
+  transition: all 0.18s ease;
+}
+
+/* Items */
+.menu li {
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  background: #f3f4ff;
+}
+
+/* Hover open */
+.dropdown:hover .menu {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1) translateY(0);
+}
+
+.dropdown:hover .arrow {
+  transform: rotate(180deg);
+}
+.info{
+	font-family: "Poppins", sans-serif;
+}
+.info a{
+  padding: 10px 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  color: #4f46e5;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 400;
+  border-radius: 10px;
+  transition: 0.4s;
+
+}
+.info a:hover{
+    transform: translateY(-20px);
+    color:#F52746 ;
+}
+.home img{
+  width: 750px;
+  position: absolute;
+  top: -20px;
+  left: 750px;
+  z-index: -1;
+}
+.home{
+  position: relative;
+  width: 1460px;
+}
+.text h1{
+  color: #040B4D;
+  font-size: 40px;
+  font-weight: 400;
+  padding-bottom: -1px;
+}
+body{
+  font-family: "Poppins", sans-serif;
+}
+.text{
+  padding-left: 80px;
+  padding-top: 100px;
+  position: relative;
+
+}
+.text p{
+  color: #040B4D;
+  font-size: 17px;
+  font-weight: 200;
+  position: absolute;
+  top: 235px;
+
+}
+.text h2{
+  color: #040B4D;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 15px;
+}
+.location{
+  width: 429px;
+  border-radius: 5px;
+  font-weight: 25px;
+  padding: 17px 10px;
+  border: 0.1px solid dimgray;
+}
+.btn1{
+  padding: 12px 17px;
+  background: #F52746;
+  color: white;
+  border-radius: 5px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  transition: 0.3s;
+}
+.btn2{
+  border: none;
+  background: transparent;
+  width: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: dimgray;
+}
+.btn1:hover{
+  transform: translateY(-10px);
+  background: hotpink;
+  border: 1px solid red;
+
+}
+.restaurants{
+  position: relative;
+}
+.restaurants .res{
+  position: absolute;
+  left: 80px;
+  color: #040B4D;
+  font-size: 38px;
+  font-weight: 380;
+  padding-bottom: -1px;
+}
+
+.res2{
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+  
+}
+.res2 a img{
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+.ress{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.res1 a img:hover{
+  transform: scale(1.2);
+ 
+}
+.res1{
+  position: relative;
+}
+.ress{
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 30px;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  background: #F7F7F7;
+  padding: 25px 20px;
+  column-gap: 720px;
+  align-items: center;
+
+}
+.footer h1{
+  color: gray;
+  font-size: 15px;
+  font-weight: 400;
+}
+.footer a{
+  color: gray;
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: none;
+}
+.othrs{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 15px;
+}
+.footers{
+  text-align: center;
+}
